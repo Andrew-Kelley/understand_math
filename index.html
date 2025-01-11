@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="'Understand Math', a math book by Andrew Kelley">
+    <title>Understand Math</title>
+    <link rel="stylesheet" href="style.css">
+    <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+    <header>
+        <h1>Understand Math</h1>
+        <h2>Reasons for the Rules</h2>
+    </header>
+    <nav id="mynavbar">
+    	<ul id="wide-screen-nav">
+    		<li class="hideOnMobile"><a href="#about" class="navlink">About</a></li>
+			<li class="hideOnMobile"><a href="#book" class="navlink">Contents</a></li>
+			<li class="hideOnMobile"><a href="#author" class="navlink">About the author</a></li>
+			<li class="hideOnMobile"><a href="#reviews" class="navlink">Reviews</a></li>
+			<li class="hideOnMobile"><a href="#comparison" class="navlink">Comparison</a></li>
+			<li class="hideOnMobile"><a href="#faq" class="navlink">FAQ</a></li>
+			<li class="hideOnMobile"><a href="#contact" class="navlink">Contact</a></li>
+			<!-- For the href on the hamburger, see
+			https://stackoverflow.com/questions/1601933/how-do-i-stop-a-web-page-from-scrolling-to-the-top-when-a-link-is-clicked-that-t
+			
+			The issue was that clicking the x or hamburger button would scroll to the top -->
+			<li id="hamburger" onclick=showSidebar() class="menu-button"><a href="javascript:void(0);"><svg  class="some-icon" xmlns="http://www.w3.org/2000/svg" height="40px" fill="#fff"  viewBox="0 -960 960 960" width="40px"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg></a></li>
+        </ul>
+        
+        <ul class="sidebar">
+            <li onclick=hideSidebar()>
+			<a href="javascript:void(0);">
+			  <svg xmlns="http://www.w3.org/2000/svg" height="40px" fill="#fff" viewBox="0 -960 960 960" width="40px"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+			</a>
+		    </li>
+        	<li><a href="#about" onclick=hideSidebar()>About</a></li>
+        	<li><a href="#book" onclick=hideSidebar()>Contents</a></li>
+        	<li><a href="#author" onclick=hideSidebar()>About the author</a></li>
+        	<li><a href="#reviews" onclick=hideSidebar()>Reviews</a></li>
+        	<li><a href="#comparison" onclick=hideSidebar()>Comparison</a></li>
+        	<li><a href="#faq" onclick=hideSidebar()>FAQ</a></li>
+        	<li><a href="#contact" onclick=hideSidebar()>Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="anchor">
+            <h2>Coming March 1, 2025 at Amazon.com:</h2>
+            
+            <figure>
+    			<img class="center" src="./images/front_cover_copy.jpg"  
+            	alt="Front cover of the book Understand Math: Reasons for the Rules by Andrew Kelley" />
+    			<figcaption align="center">Front cover of the book.</figcaption>
+			</figure>
+            
+            
+            <p> Does math seem like a bunch of arbitrary rules?
+				This book is here to explain clearly why most of the rules aren't 
+				arbitrary at all. There are good reasons for them!
+				The purpose of this book is to <em>explain the reasons</em> for the main 
+				rules learned in middle school and high school mathematics
+				(i.e., for 6th through 12th grade). It is written from a conservative, Christian perspective.
+			</p>
+				
+			<p>
+				Andrew's goal throughout the book is to explain <em>why</em> the rules work 
+				the way they do. Applications to real world problems are only occasionally
+				mentioned in passing. For most rules, instead of giving rigorous proofs, Andrew
+				explains the essence for why the rules work. He focuses on the heart of why they 
+				are true.
+			</p>
+			
+			
+			
+			<h3>Why learn reasons for the rules?</h3>
+			<p>
+				If you understand why a rule works and know why it is true, then you are more 
+				likely to remember the rule, use it correctly, and know when it applies 
+				and when it doesn't. Having real insight can also set you apart. 
+				If you can only mechanically follow rules without understanding them, 
+				what sets you apart from a computer? Computers can do math,
+				but they still lack real understanding. People who don't want to be 
+				replaceable by a computer, should seek to <em>understand</em>.
+				Finally, when math makes sense, it is much more enjoyable. 
+			</p>
+			
+			<h3>A <em>supplement</em> to traditional curriculum</h3>
+			<p>
+			This book isn't meant to be a standard textbook
+			used for just one year of school. Rather, Andrew tried to make it the best <em>supplement</em> to use while studying
+			math in middle school and high school. 
+			Homeschoolers and those teaching themselves should find this book incredibly helpful.
+			</p>
+				
+        </section>
+        <section id="book" class="anchor">
+        
+            <h2>Table of Contents</h2>
+            
+            <p> Click a chapter to view more. </p>
+            
+            <ul>
+            <li><a onclick="toggleVisibility(event)" data-target="#chapter1" class="linklike">Chapter 1. Fractions</a>
+                <ul id="chapter1" hidden>
+
+                    <li>1.1 Adding fractions
+                        <ul id="section1-1">
+                            <li>1.1.1 Adding fractions demonstration </li>
+                            <li>1.1.2 Comments on adding fractions</li>
+                        </ul>
+                    </li>
+                    <li>1.2 Multiplication of fractions</li>
+                    <li>1.3 Division of fractions
+                        <ul id="section1-3">
+                            <li>1.3.1 Another explanation of division by fractions</li>
+                        </ul>
+                    </li>
+                    <li>1.4 How to write fractions
+                        <ul id="section1-4">
+                            <li>1.4.1 Drawing fraction lines</li>
+                            <li>1.4.2 Mixed numbers</li>
+                        </ul>
+                    </li>
+                    <li>1.5 Reducing fractions</li>
+                </ul>
+            </li>
+            <li><a onclick="toggleVisibility(event)" data-target="#chapter2" class="linklike">Chapter 2. Pre-algebra</a>
+                <ul id="chapter2" hidden>
+                    <li>2.1 What is a variable?</li>
+                    <li>2.2 Order of operations
+                        <ul id="section2-2">
+                            <li>2.2.1 An advanced but important note</li>
+                        </ul>
+                    </li>
+                    <li>2.3 Equations and expressions
+                        <ul id="section2-3">
+                            <li>2.3.1 Solving a simple equation</li>
+                        </ul>
+                    </li>
+                    <li>2.4 Exponents
+                        <ul id="section2-4">
+                            <li>2.4.1 The foundational exponent rule, and a consequence of it</li>
+                            <li>2.4.2 What you can't do with exponents</li>
+                        </ul>
+                    </li>
+                    <li>2.5 Why does \(2^0 = 1\) and \(2^{-1} = \frac{1}{2}\)?
+                        <ul id="section2-5">
+                            <li>2.5.1 Other reasons why \(2^0 = 1\) and \(2^{-1} = \frac{1}{2}\)</li>
+                            <li>2.5.2 Two short reasons why \(2^{-1} = \frac{1}{2}\)</li>
+                        </ul>
+                    </li>
+                    <li>2.6 Distributing and factoring
+                        <ul id="section2-6">
+                            <li>2.6.1 What can't be distributed</li>
+                            <li>2.6.2 A despicable acronym</li>
+                        </ul>
+                    </li>
+                    <li>2.7 Lines</li>
+                    <li>2.8 A general piece of advice in solving for \(x\)</li>
+                    <li>2.9 A brief note on word problems</li>
+                </ul>
+            </li>
+        
+		  <li><a onclick="toggleVisibility(event)" data-target="#chapter3" class="linklike">
+			Chapter 3. Arithmetic</a>
+			<ul id="chapter3" hidden>
+			  <li>
+				How numbers are represented
+				<ul>
+				  <li>Roman numerals</li>
+				  <li>Using decimals</li>
+				</ul>
+			  </li>
+			  <li>Multiplication as repeated addition</li>
+			  <li>Multiplication of multi-digit numbers
+				<ul>
+				  <li>Lattice method for multiplication</li>
+				</ul>
+			  </li>
+			  <li>Division by 0
+				<ul>
+				  <li>Another reason why we can't divide by 0</li>
+				</ul>
+			  </li>
+			  <li>Negative numbers
+				<ul>
+				  <li>Two interpretations of numbers</li>
+				  <li>A tiny bit of algebra</li>
+				</ul>
+			  </li>
+			  <li>Remainders and divisibility rules for 3 and 9</li>
+			  <li>Binary numbers</li>
+			</ul>
+		  </li>
+		  
+		  <li><a onclick="toggleVisibility(event)" data-target="#chapter4" class="linklike">
+			Chapter 4. Algebra </a>
+			<ul id="chapter4" hidden>
+			  <li>Background</li>
+			  <li>Square roots, cube roots, and exponents being fractions like 1/2 or 1/3
+				<ul>
+				  <li>So why does \(100^{1/2} = \sqrt{100}\)?</li>
+				</ul>
+			  </li>
+			  <li>Functions
+				<ul>
+				  <li>Composition of functions</li>
+				</ul>
+			  </li>
+			  <li>Graphing functions
+				<ul>
+				  <li>The absolute value function</li>
+				  <li>More on the square root</li>
+				</ul>
+			  </li>
+			  <li>Factoring and quadratics</li>
+			  <li>Factoring polynomials: difference of two squares</li>
+			  <li>Solving for \(x\) when it is in the denominator
+				<ul>
+				  <li>Cross multiplying</li>
+				  <li>When \(x\) is in the denominator of two fractions</li>
+				</ul>
+			  </li>
+			  <li>Fractions part two
+				<ul>
+				  <li>Reducing fractions with variables</li>
+				  <li>Adding fractions with variables (and subtracting them)</li>
+				</ul>
+			  </li>
+			  <li>Multiple equations with multiple unknowns
+				<ul>
+				  <li>A word problem</li>
+				</ul>
+			  </li>
+			  <li>Solving for \(x\), the big picture</li>
+			  <li>Inequalities
+				<ul>
+				  <li>Reversing the direction of an inequality</li>
+				</ul>
+			  </li>
+			  <li>Completing the square
+				<ul>
+				  <li>Deriving the quadratic formula</li>
+				</ul>
+			  </li>
+			  <li>Logarithms
+				<ul>
+				  <li>The logarithm as the inverse of the exponential function</li>
+				  <li>The product to sum rule for logarithms</li>
+				  <li>Pulling an exponent out and in front of the logarithm</li>
+				  <li>The change of base formula</li>
+				</ul>
+			  </li>
+			  <li>The rational root theorem for polynomials</li>
+			  <li>Further reading</li>
+			</ul>
+		  </li>
+		  
+		  <li><a onclick="toggleVisibility(event)" data-target="#chapter5" class="linklike">
+			Chapter 5. Geometry</a>
+			<ul id="chapter5" hidden>
+			  <li>The Pythagorean Theorem</li>
+			  <li>Why do the angles in a triangle add to 180°?</li>
+			  <li>A universally applicable formula about area
+				<ul>
+				  <li>The area of a parallelogram</li>
+				</ul>
+			  </li>
+			  <li>Why does a circle with radius \(r\) have area \(πr^2\)?
+				<ul>
+				  <li>Why is the circumference of a circle \(2πr\)?</li>
+				  <li>Getting the formula \(πr^2\)</li>
+				</ul>
+			  </li>
+			  <li>Comments on proofs</li>
+			</ul>
+		  </li>
+		  
+		  <li><a onclick="toggleVisibility(event)" data-target="#chapter6" class="linklike">
+			Chapter 6. Logic</a>
+			<ul id="chapter6" hidden>
+			  <li>The basics of logic
+				<ul>
+				  <li>Conditional statements</li>
+				  <li>The usage of "or"</li>
+				</ul>
+			  </li>
+			  <li>Proofs</li>
+			  <li>Foundational things</li>
+			  <li>Logical fallacies and errors in reasoning</li>
+			</ul>
+		  </li>
+		  
+		  <li><a onclick="toggleVisibility(event)" data-target="#chapter7" class="linklike">
+			Chapter 7. Trigonometry</a>
+			<ul id="chapter7" hidden>
+			  <li>Radians</li>
+			  <li>Sine, cosine, tangent -- triangle definition</li>
+			  <li>The unit circle</li>
+			  <li>The graph of tangent</li>
+			  <li>Trig identities
+				<ul>
+				  <li>Identities with other trig functions</li>
+				  <li>The sum identity for sine</li>
+				  <li>The sum formula for cosine</li>
+				  <li>The difference formulas for sine and cosine</li>
+				  <li>The law of sines</li>
+				  <li>The law of cosines</li>
+				</ul>
+			  </li>
+			  <li>Why is winter colder the more north you go?</li>
+			  <li>Further reading</li>
+			</ul>
+		  </li>
+		  
+		  <li><a onclick="toggleVisibility(event)" data-target="#chapter8" class="linklike">
+			Chapter 8. Complex numbers: \(i = \sqrt{-1}\) </a>
+			<ul id="chapter8" hidden>
+			  <li>Numbers and the complex plane</li>
+			  <li>Adding complex numbers</li>
+			  <li>Multiplying complex numbers
+				<ul>
+				  <li>Polar representation
+					<ul>
+					  <li>Euler's formula</li>
+					</ul>
+				  </li>
+				</ul>
+			  </li>
+			  <li>Applications
+				<ul>
+				  <li>Trigonometric identities</li>
+				  <li>Adding sine and cosine together</li>
+				</ul>
+			  </li>
+			</ul>
+		  </li>
+		  
+		  <li><a onclick="toggleVisibility(event)" data-target="#chapter9" class="linklike">
+			Chapter 9. Probability</a>
+			<ul id="chapter9" hidden>
+			  <li>
+				Basic set theory
+				<ul>
+				  <li>Union and intersection</li>
+				  <li>Cartesian product</li>
+				  <li>When to add? When to multiply?</li>
+				</ul>
+			  </li>
+			  <li>From counting to probability</li>
+			  <li>Independent events</li>
+			  <li>
+				Making groups--when order does or doesn't matter
+			  </li>
+			  <li>
+				Binomial coefficients: "\(n\) choose \(k\)"
+				<ul>
+				  <li>Binomial coefficients and probability</li>
+				  <li>
+					Another derivation of the formula for \(n\) choose \(k\)
+				  </li>
+				</ul>
+			  </li>
+			  <li>
+				Rolling many-sided dice many times
+				<ul>
+				  <li>An extremely secure "password"</li>
+				</ul>
+			  </li>
+			  <li>A challenge problem</li>
+			</ul>
+		  </li>
+		  
+		  <li><a onclick="toggleVisibility(event)" data-target="#chapter10" class="linklike">
+			Chapter 10. Precalculus </a>
+			<ul id="chapter10" hidden>
+			  <li>Functions</li>
+			  <li>Graphing functions
+				<ul>
+				  <li>Graphing the inverse of a function</li>
+				  <li>Shifting the graph of a function</li>
+				  <li>Stretching/shrinking the graph of a function</li>
+				</ul>
+			  </li>
+			  <li>A graphical reason why \(\sqrt{a + b} \neq \sqrt{a} + \sqrt{b}\)</li>
+			  <li>Solving for \(x\) with the composition of functions</li>
+			  <li>Factoring revisited
+				<ul>
+				  <li>The sum and difference of cubes and related patterns</li>
+				  <li>Factoring quadratics whose leading coefficient isn't 1</li>
+				</ul>
+			  </li>
+			  <li>Product to sum trigonometric identities</li>
+			  <li>Conic sections
+				<ul>
+				  <li>An ellipse</li>
+				  <li>A hyperbola</li>
+				</ul>
+			  </li>
+			  <li>The principle of induction</li>
+			  <li>One more note on functions</li>
+			</ul>
+		  </li>
+		  
+		  <li><a onclick="toggleVisibility(event)" data-target="#chapter11" class="linklike">
+			Chapter 11. Calculus</a>
+			<ul id="chapter11" hidden>
+			  <li>Limits
+				<ul>
+				  <li>Two tips for limits</li>
+				  <li>Continuity</li>
+				</ul>
+			  </li>
+			  <li>Derivatives
+				<ul>
+				  <li>The derivative as a function</li>
+				</ul>
+			  </li>
+			  <li>Rules for taking derivatives quickly
+				<ul>
+				  <li>The sum rule</li>
+				  <li>The product rule</li>
+				  <li>The chain rule</li>
+				  <li>The quotient rule</li>
+				</ul>
+			  </li>
+			  <li>Integrals</li>
+			  <li>The Fundamental Theorem of Calculus (FTC)</li>
+			  <li>Limits of indeterminate form</li>
+			  <li>Infinite series
+				<ul>
+				  <li>A few tests for convergence</li>
+				</ul>
+			  </li>
+			  <li>How fast certain functions approach infinity
+				<ul>
+				  <li>An extended example</li>
+				</ul>
+			  </li>
+			</ul>
+		  </li>
+		  
+		  
+		  <li><a onclick="toggleVisibility(event)" data-target="#chapter12" class="linklike">
+			Chapter 12. What is Mathematics?</a>
+			<ul id="chapter12" hidden>
+			  <li>How this book differs from traditional math</li>
+			  <li>The Königsberg bridge problem</li>
+			  <li>Different infinities?</li>
+			  <li>The fold and cut theorem</li>
+			  <li>Fermat's last theorem</li>
+			  <li>Going beyond the quadratic formula for higher degree polynomials</li>
+			  <li>The four color theorem</li>
+			  <li>Arithmetic progressions among primes</li>
+			  <li>A random walk in an infinite space</li>
+			  <li>The prime number theorem</li>
+			  <li>The twin primes conjecture</li>
+			  <li>Stirling's formula</li>
+			  <li>More on infinite series
+				<ul>
+				  <li>Converse of the intermediate value theorem</li>
+				</ul>
+			  </li>
+			  <li>Symmetry
+				<ul>
+				  <li>The longest proof written by humans</li>
+				</ul>
+			  </li>
+			  <li>Conclusion</li>
+			</ul>
+		  </li>
+		  
+		</ul>
+        
+        <p>
+        <a href="./understand_math_sample.pdf" download="./understand_math_sample.pdf">Download a free sample of the book.</a>
+        The author grants you permission to freely distribute this sample.
+        </p>
+        </section>
+        <section id="author" class="anchor">
+            <h2>About the author</h2>
+            
+            <p>Dr. Andrew Kelley is a mathematician with over 12 years of experience in math education. 
+            He has been a tutor, teaching assistant, and professor and has enjoyed working 
+            with students in elementary school, middle school, high school, and college. </p>
+            
+            
+            <img class="center" src="./images/Andrew_resized2.jpg" alt="Andrew Kelley" 
+            	style="max-width: 100px;" />
+   			
+        </section>
+        
+        <section id="reviews" class="anchor">
+            <h2>Reviews/Endorsements</h2>
+            
+            <p> "Looks very thoughtfully written for easy understanding." - Mike Summerhays, Engineering Fellow</p>
+            
+            <p> "That makes so much sense."
+				- Mary Ann Brubaker, 85 years old (commenting on the fractions chapter)</p>
+            
+            <p> "I thought the fractions chapter was quite clear and easy to understand and follow."
+            - Elizabeth Mayner, former homeschool mom</p>
+            
+            <p> "An impressive book." - Marilyn Frydrych, math teacher and math lab 
+            coordinator at Pikes Peak State College</p>
+            
+            
+            <blockquote> "I completed chapter 1 and really enjoyed the process of relearning and better 
+            understanding fractions!  Your examples are easy to identify with, your 
+            explanations are clear, and your conversational style made me feel like 
+            I had the help of a tutor via the text." </blockquote>
+            <p>- Gayle Meredith, senior library associate </p>
+            
+            <blockquote> "So far, I’m loving it!...I really like your descriptions and how you develop ideas/concepts, especially in discussing the 
+				inherent properties of seemingly simple ideas (which, of course, are not usually simple)...I 
+				also very much like how you explain the logic and thought processes behind each concept.  
+			You present so much more than a set of rules (most math textbooks don’t do much more than 
+			presenting a set of rules); you really give the reader a sense of how these ideas and concepts 
+			were developed and why...You also do a great job of connecting the concepts...Your Motivation
+			 questions are excellent, really drawing readers to consider the concepts more deeply...You’ve 
+			 combined so many deeply connected ideas and provided 
+			understanding of why these concepts are important, and how they might be used and applied."
+			</blockquote>
+			<p>- Erica Hastert, college math teacher </p>
+			
+			<blockquote>
+			"The book will make a great companion to math textbooks throughout subjects like algebra, advanced algebra, 
+			  geometry, trigonometry, and calculus.  The conversational style the book is written in makes it easy to 
+			   understand and follow.  It would make a welcome addition to texts used by homeschool parents to help 
+			  explain new concepts, new math principles, and new ways of thinking that are typically stumbling blocks 
+			  for many being introduced to math throughout the Jr. High-High school 
+			  years."
+			</blockquote>
+			<p>- Jim Crowder, PhD, Mathematician and Engineering Fellow</p>
+        </section>
+        
+        
+        
+        
+        <section id="comparison" class="anchor">
+        <h2> Comparison with other math textbooks</h2>
+		
+		<p> Click a book to compare it with "Understand Math: Reaons for the Rules" by Dr. Andrew Kelley.
+		</p>
+		
+		<p>
+		After Andrew wrote most of his book, he compared it with at least 25 other math books.
+		In summary, most math books do not explain the reasons behind most rules. This is precisely the
+		shortcomming that Andrew attempted to fill.
+		</p>
+		
+		<ul>
+		<li>  <a onclick="toggleVisibility(event)" data-target="#saxon_8_slash_7" class="linklike"> "Saxon Math Homeschool 8/7"</a>
+	    </li>
+				
+		<div id="saxon_8_slash_7" hidden>
+			<p> Saxon explains fractions decently well in this book. His explanation of how to add fractions
+			isn't bad either. He explains the distributive property better than some books, but
+			he still doesn't fully explain why it works. His explanation of reducing fractions is good, but 
+			his explanation of dividing by fractions isn't as clear as it could be. His explanation of negative 
+			exponents is pretty good, as well as when 0 is an exponent. For the topic of probability, he makes a misleading
+			assumption and doesn't clarify that his assumption doesn't always apply in probability. Overall, this is a 
+			legitimate option to use as a main curriculum.</p>
+		</div>
+		
+		<li>  <a onclick="toggleVisibility(event)" data-target="#saxon_one_half" class="linklike"> Saxon "Algebra 1/2: An Incremental Development" </a>
+		</li>
+				
+		<div id="saxon_one_half" hidden>
+			<p> Saxon mentions that \(12 \times 7 = 7 \times 12 \), but he doesn't explain why. His explanation
+			of fractions isn't the clearest. For multiplication and division by fractions, he does not explain why
+			the rules work, but he does have a good visual for adding fractions. His description of variables 
+			is not the best. He does not explain why cross multiplying works, and he gives no explanation (besides 
+			an example) for why the distributive property works.</p>
+			
+			<p>Unfortunately, Saxon gives an erronous explanation for a problem about cube roots. This isn't just a typo.
+			He tries to round \(\sqrt[3]{250}\) to the nearest whole number, but his reasoning is completely incorrect.
+			He uses the same misguided reasoning when he estimates \(\sqrt[4]{390}\) to the nearest whole number. His 
+			error is a subtle one that is easy to make for people who are not mathematicians. What he does is say that 
+			because 390 is closer to \(4^4\) than to \(5^4\), then \(\sqrt[4]{390}\) rounds to 4. While this may seem 
+			plausible (and while \(\sqrt[4]{390}\) happens to round to 4), the reasoning he gives is fundamentally flawed. Indeed, consider \(\sqrt[4]{416}\). The number 416 also 
+			is closer to \(4^4\) than to \(5^4\), but \(\sqrt[4]{416}\) actually rounds to 5. This is because the fourth root 
+			function is not a straight line, and so it is <em>not</em> valid to round it before applying the fourth root. 
+			<!-- These errors are subtle, but they do not necessarly detract from the rest of that book.-->
+			</p>
+			
+			<p> In this book, Saxon's explantion of negative exponents is not good, and in fact, it is actually misleading.
+			He gives no explanation for why negative exponents work the way the do. He also states, "It is impossible to 
+			evalute \(\frac{4^{-2}}{1}\) as it is, because a negative exponent does not indicate an operation."
+			However, he is mistaken about this.
+			</p>
+			
+			<p>
+			Overall, <em> Saxon Algebra 1/2</em> is neither the best nor the worst option for a pre-algebra textbook.
+			</p>
+		</div>
+		
+		<li>  <a onclick="toggleVisibility(event)" data-target="#saxon_algebra1" class="linklike"> Saxon "Algebra 1: An Incremental Development" </a> </li>
+					
+		<div id="saxon_algebra1" hidden>
+			<p> Saxon does not explain why the distributive property works. He explains neither why \(a(b+c) = ab + ac\) nor
+			why \((a+b)(c+d) = ac + ad + bc + bd\). Another rule he does not explain is why \(\sqrt{mn} = \sqrt{m}\sqrt{n}\)
+			for non-negative numbers \(n\) and \(m\). One very important topic for algebra is that of "functions," but Saxon's
+			explanation of this topic is confusing, and he does not mention that \(f(x)\) is <em>not</em> \(f\) times \(x\).
+			Next, his explanation of completing the square is not very good, and he sticks with using it only in equations, 
+			even though you don't need an equation to compelete the square. In lesson 30, he introduces the rule 
+			for cross multiplying without giving <em>any</em> indication for why it works (even though explaining it is very 
+			simple). Finally, when talking about dividing by a fraction, he does give an explanation for why it works, but he 
+			is not very clear on one crucial detail.
+			</p>
+			</div>
+			
+		<li>  <a onclick="toggleVisibility(event)" data-target="#saxon_algebra2" class="linklike"> Saxon "Algebra 2: An Incremental Development" </li>
+					</a>
+		<div id="saxon_algebra2" hidden>
+			<p>
+			The following quote by Saxon is illustrative. He claims in lession 35, on page 158,
+			<blockquote> "There are two ways to write the square root of 2. 
+			
+			<p align="center">
+			\(\sqrt{2}\) and \(2^{1/2}\)
+			</p>
+			
+			<b>There is nothing to understand</b>, for this is a definition of what we mean when we use the square root radical
+			sign or the fractional exponent \(1/2.\text{"}\) - Saxon Algebra 2 [emphasis added by bolding text]
+			</blockquote>
+			However, Saxon is completely mistaken that there is no reason for why \(\sqrt{2} = 2^{1/2}\).
+			Even if it is a definition, that does <em>not</em> mean there is no reason for it or that it is 
+			arbitrary. In general, Saxon often does not explain why the rules are what they are.
+			</p>
+			<p> 
+			Finally, Saxon only applies completing the square in equations, even though it is useful to know how to do it 
+			outside of an equation. His explanation of functions is not very good, and he uses some uncommon 
+			terminology. He does do a decent job explaining logarithms, but it isn't as clear as it could be. 
+			</p>
+		</div>
+		
+		<li>  <a onclick="toggleVisibility(event)" data-target="#prealgebra_rusczyk" class="linklike"> "Pre-algebra" by Richard Rusczyk, David Patrick, Ravi Boppana </li>
+			 </a>
+		<div id="prealgebra_rusczyk" hidden>
+			<p>
+			This book is somewhat advanced, but it is an excellent choice for its intended audience. 
+			They do explain why \(2^0 = 1\), but they only give one explanation for it.
+			The explanation they do give happens to be Andrew's favorite explanation, but in 
+			"Understand Math," Andrew gives <em>four</em> reasons
+			for why having an exponent of zero results in a number equal to one. 
+			(Normally, Andrew only gives one or two explanations for a rule.)
+			</p>
+			
+			<p>
+			They don't explain why distributing \(a(b+c)\) works, and Andrew's
+			explanation of fractions is simpler than theirs. 
+			
+			</p>
+			<p>
+			Finally, their book is organized by beginning each section with
+			problems to attempt. Students are expected to struggle with some problems
+			before being giving the tools useful to solve them. For advanced students, this is not
+			necessarily a bad approach.
+			</p>
+		</div>
+		
+		<li>  <a onclick="toggleVisibility(event)" 
+				data-target="#counting_to_calculus" class="linklike"> 
+				"Understanding Mathematics: From Counting to Calculus" 
+				by Keith Kressin </li>
+			 </a>
+		<div id="counting_to_calculus" hidden>
+			<p>
+			Kressin's book does have some good material in it, and
+			people have benefited from his book. Just like Andrew, Kressin also
+			covers a broad range of math, and his book is intended to be used as a supplement
+			to traditional curriculum.
+			Both Andrew and Kressin are not trying to always be rigorous.
+			To some extent, Kressin's book does attempt to answer the question,
+			"Why do I have to do it like that?" However, there are many rules Andrew explains
+			which Kressin does not. Because Keith Kressin's book may appear to be similar to
+			Dr. Andrew Kelley's, book, a detailed comparison is given here. Every rule mentioned
+			below that Kressin does not cover is explained by Andrew.
+			</p>
+			
+			<p>
+			Kressin begins with counting, but Andrew assumes his readers already know how to
+			add, subtract, multiply, and divide whole numbers. Kressin doesn't explain the distributive 
+			law very thoroughly, and he gives no geometric meaning to it.
+			Kressin does prove the quadratic formula, but he doesn't explain completing the 
+			square very thoroughly (even though it is used as a crucial step in deriving
+			the quadratic formula). Kressin does show how to divide polynomials (one topic that
+			Andrew does not explain). 
+			</p>
+			
+			<p>
+			In geometry, Kressin doesn't show why the Pythagorean Theorem is true nor
+			why the area of a circle is \(\pi r^2.\)  
+			</p>
+			
+			
+			<p>
+			Kressin does include 12 pages on matrices, but Dr. Andrew Kelley on the other hand,
+			being a mathematician who has taught
+			college level mathematics, thought that it is better to omit matrices for two reasons.
+			First, every book on linear algebra explains them. Second,
+			many students never encounter matrices until <em>after</em> they
+			take calculus.
+			</p>
+
+			<p>
+			In Chapter 2, Kressin gives a 
+			definition of "number" that is not very accurate. He states,
+			"A number is a symbol used to represent a collection of things." However,
+			this is not an accurate definition.
+			Kressin does not explain why the rule for multiplying fractions is what it is, but
+			he does very briefly address why dividing by 1/2 is the same as 
+			multiplying by 2.
+			</p>
+			
+			<p>
+			
+			For logarithms, Kressin explains that
+			 \(\log(ab) = \log(a) + \log(b)\), but 
+			he doesn't explain the change of base formula. As for complex numbers, 
+			he doesn't explain the geometric
+			interpretation of multiplying by \(i\).
+			</p>
+			
+			<p>
+			For trigonometry, he does not explain where <b>any</b> of the trig identities come from
+			(excepting barely hinting at one of them).
+			He also doesn't explain the concept of radians very well.
+			He does at least explain that \(\sin(\theta - 90°)\) is not \(\sin(\theta) - \sin(90°)\).
+			</p>
+
+			<p>
+			Kressin gives only one explanation why \(b^0 = 1\) (whereas Andrew gives four explanations,
+			which is the most explanations Andrew gives on any topic).
+			</p>
+			
+			<p>
+			He doesn't explain the fundamental theorem of calculus. Dr. Andrew Kelley,
+			on the other hand, explains it thoroughly.
+			For derivatives, Kressin doesn't explain why the sum rule, product rule,
+			quotient rule, or chain rule works.
+			</p>
+			
+			<p>
+			Finally, Kressin has no chapter on probability nor one on logic. He also 
+			gives no intuitive explanation for what a function is, even though the concept of
+			functions is completely essential for practically all of math from advanced algebra
+			and beyond.
+			</p>
+		</div>
+
+		
+		<li>  <a onclick="toggleVisibility(event)" data-target="#prealgebra_davison_landau" class="linklike"> "Pre-Algebra" by Davison, Landau, McCracken, Thompson</a>
+	    </li>
+				
+		<div id="prealgebra_davison_landau" hidden>
+			<p> 
+			They almost explain the distributive property in an "Investigate" section at the beginning of a section,
+			but they don't fill in the details. They don't explain why multiplying
+			or dividing both sides of a fraction by the same number results in an equivalent fraction. They do give one
+			reason why \(3^0 = 1\) (whereas Andrew explains this concept using four explanations). They don't clearly
+			explain why the rule for adding fractions works. They also don't explain why the rule for multiplication
+			by fractions works. In probability, they make an incorrect statement that many people are confused about.
+			They do explain why \(3 \div \frac{1}{2} = 3 \times 2 \), but that is the only example of dividing by fractions
+			that they explain when introducing the concept. Finally, their explanation of functions is not very good.
+			Overall, this book looks decent.
+			</p>
+		</div>
+		
+		<li>  <a onclick="toggleVisibility(event)" 
+		data-target="#college_of_the_redwoods" 
+		class="linklike"> "Pre-Algebra Textbook 2nd edition" by 
+						The Department of Mathematics College of the Redwoods 2012-2013</a>
+	    </li>
+		<div id="college_of_the_redwoods" hidden>
+			<p> 
+			On pages 33-34, their explanation for why multiplication of whole numbers is commutative isn't the best.
+			On page 40, their explanation of why division by 0 is undefined isn't the best either. On page 68, they
+			give an example of the distributive property, but they don't explain why it works. They also don't
+			fully explain why reducing fractions works, and they don't clearly explain what fractions are.
+			Overall, this is a decent book.
+			</p>
+		</div>
+		
+		<li>  <a onclick="toggleVisibility(event)" 
+		data-target="#middleschool_study_guide" 
+		class="linklike"> "Everything you need to ace math in one big fat notebook 
+		(The complete middleschool study guide)"</a>
+	    </li>
+		<div id="middleschool_study_guide" hidden>
+			<p> 
+			This book does not explain why the rules are what they are. It is basically a collection
+			of some examples and exercises. It gives the rule that \(6^0 = 1\) but doesn't say why.
+			It also doesn't explain why dividing by a fraction is the same as multiplying by the
+			reciprocal (i.e., "copy dot flip"). It also doesn't explain why reducing fractions works the way it does
+			nor of multiplication of fractions.
+			Their explanation of functions is not very good, and what is more,
+			their example of page 418 is extremely misguided and misleading. (They basically imply that a line
+			is a set of five points in the plane, which is completely false. They even repeat this error on page 420
+			and on page 426.) This is not a very good book and should probably be avoided.
+			</p>
+		</div>
+		
+		<li>  <a onclick="toggleVisibility(event)" 
+		data-target="#kaseberg_algebra" 
+		class="linklike"> "Introductory Algebra: A Just-in-Time Approach" by Alice Kaseberg</a>
+	    </li>
+		<div id="kaseberg_algebra" hidden>
+			<p> 
+			On page 83, Kaseberg states the rule that \((xy)^{a} = x^ay^a\) but gives no reason for it. On page 84,
+			she states that \((x^a)^b = x^{ab}\) and again gives no reason for it. She does give one reason why
+			\(5^0 = 1\), and she gives one reason why \(x^{-2} = \frac{1}{x^2}\).  On page 175, she says that
+			 an inequality should be reversed when multiplying by a negative, but she gives no reason for it.
+			 She also does not justify the distributive property. Her explanation of functions is not the greatest.
+			 Logarithms are not covered in this book (which makes sense, since it is only introductory algebra).
+			</p>
+		</div>
+		
+		</ul>
+        
+        </section>    
+        
+        <section id="faq" class="anchor">
+        
+        <h2> Frequently Asked Questions</h2>
+        
+        <ul>
+        	<li>
+        	<a onclick="toggleVisibility(event)" data-target="#this_is_a_supplement" class="linklike">
+        	Why is this book called a <em>supplement</em>?
+        	</a>
+        	</li>
+        	<div id="this_is_a_supplement" hidden>
+        	<p>
+        	This book covers math from fractions through calculus. It simply isn't possible to
+        	cover the entirety of those topics in depth without making the book enormously large.
+        	The focus of this book is to explain the reasons behind the main rules learned
+        	in middle school and high school. Andrew's aim has been to fill in what is
+        	missing in most curriculums; that missing piece is a failure to explain 
+        	why the rules work. He felt no need to re-do the same things that any solid
+        	curriculum already does well.
+        	</p>
+        	</div>
+        	
+        
+        	<li><a onclick="toggleVisibility(event)" data-target="#no_teacher" class="linklike">
+        	Can someone read this book without help from a teacher?</a>
+        	</li>
+        	<div id="no_teacher" hidden>
+				<p>
+				 Yes, any motivated reader
+				 <em>can</em> work carefully through this book without the help of a teacher. However, 
+				 it is undeniable that no matter your curriculum, it is helpful to have a 
+				 knowledgeable and patient person
+				 you can go to for help, but this book was written with the assumption that readers do <em>not</em>
+				 have access to such a teacher/tutor. In particular, almost every single question given in the book
+				 also has a full explanation of the answer (showing all work).
+				</p>
+        	</div>
+        
+        	<li><a onclick="toggleVisibility(event)" data-target="#christian_perspective" class="linklike">
+        	How is this book written from a Christian perspective?</a>
+        	</li>
+				<div id="christian_perspective" hidden> 
+				<p> Other than the quotations from the Bible, a Biblical perspective is presented
+				throughout. In the logic chapter,
+				Dr. Kelley explains that objective truth exists, and he discusses a number of logical
+				fallacies that many non-Christians are guilty of. These include mathematical fallacies, as
+				well as non-mathematical ones. As an example of a mathematical fallacy, some people who
+				take advanced math claim that it is <b>not</b> an absolute truth that \(1+1 = 2\),
+				but Andrew explains why they are mistaken and even names the particular fallacy they commit.
+				</p>
+			
+				<p>
+				A Christian perspective is sprinkled throughout 
+				<em>Understand Math: Reasons for the Rules</em>. As another example, because
+				there are so-called "imaginary" numbers
+				(\(i = \sqrt{-1}\)), some people say that in math, you can make up whatever
+				you want. Dr. Kelley specifically teaches against that. Andrew's conservative,
+				Christian perspective is evident from multiple parts of this book.
+				</p>
+        	</div>
+        	
+        	<li><a onclick="toggleVisibility(event)" data-target="#how_to_incorporate" class="linklike">
+        	How can I use this book in homeschooling?</a>
+        	</li>
+        		<div id="how_to_incorporate" hidden> 
+        		
+        		<p>Click a section to view more.</p>
+        		
+        		<h3><a onclick="toggleVisibility(event)" data-target="#all_students" class="linklike">
+				 All students</a> </h3>
+				<p id="all_students" hidden>
+					All students need to <em>attempt
+					the exercises and motivation questions <b>before</b> reading the fully explained
+					answers</em> in the book. It will be very tempting for readers to read the solutions
+					before attempting problems themselves, and this must be avoided. 
+					How you go about ensuring this depends on the level of maturity of your student.
+				</p>
+				
+				
+				<h3><a onclick="toggleVisibility(event)" data-target="#typical_students" class="linklike">
+				Most students</a></h3>
+				<div id="typical_students" hidden>
+					<p> 
+					Most people don't enjoy math enough to read a math book for fun. For such
+					people, you will probably have to <em>require</em> him or her to work through parts of this book.
+					In any given year, most students won't need to read more than one (or perhaps two)
+					chapters from "Understand Math." Besides the "All students" advice above, click an option 
+					below to read more:
+					</p>
+			
+					<h4><a onclick="toggleVisibility(event)" data-target="#semi-supervised" class="linklike">
+					 Option 1: A semi-supervised approach</a></h4>
+					<p id="semi-supervised" hidden>
+					Ideally, you should take a little bit of time to find how the topics in "Understand Math"
+					correspond to the curriculum you are already using. First, you can determine which
+					sections from your main curriculum correspond to sections in this book. Then, for
+					each section in "Understand Math" (in the chapter covering your student's current level), 
+					you can assign your student to work through that specific section right after
+					going through the corresponding section in your main curriculum.
+					</p>
+				
+					<h4><a onclick="toggleVisibility(event)" data-target="#minimal-supervision" class="linklike">
+					Option 2: Minimal supervision </a></h4>
+					<p id="minimal-supervision" hidden>
+					For highly disciplined students who can manage their own schedule, simply require
+					such students to work through the relevant chapter within a few months into the school year
+					(or perhaps by the end of the year). This can only work for students with high motivation.
+					Another possibility (for very disciplined students) is to have them look up
+					each topic as it comes up in their regular curriculum.
+					</p>
+				
+					<h4><a onclick="toggleVisibility(event)" data-target="#much_supervision" class="linklike">
+					 Option 3: Lots of supervision</a> </h4>
+					<p id="much_supervision" hidden>
+					No matter what curriculum and
+					supplementary resources you use, students who need much more structure and help (and are not very independent) 
+					may need you to work through much of the material with
+					them. In this case, you should read the appropriate sections of the book with your student.
+					This book was written to be understandable by people who took math long ago and want
+					a refresher.
+					</p>
+				</div>
+				
+				<h3><a onclick="toggleVisibility(event)" data-target="#weaker_students" class="linklike">
+					 Struggling students</a> </h3>
+					<p id="weaker_students" hidden>
+					A student who really struggles with math might greatly benefit by working through
+					chapters that come before the "level" they are currently taking. For example, a student
+					taking algebra 1 might get significant help by reading the pre-algebra chapter (and maybe
+					the fractions chapter too). In this case, you could require your son or daughter
+					to work through the more fundamental chapter before continuing with the current "level."
+					If, in addition to being very weak in math, your student also has little discipline
+					or motivation, you may need to work through (the relevant parts of) the book <em>with</em> your student.
+					In such cases, there is no substitute for having a real person help the student along the way.
+				</p>
+				
+				
+				<!--
+				<h4> Final advice</h4>
+				<p>
+				The amount of supervision your student needs depends on his or her maturity.
+				The author recommends that you 
+				</p>
+				-->
+        	</div>
+        	
+        	<li><a onclick="toggleVisibility(event)" data-target="#many_questions" class="linklike">
+        	Why doesn't this book have thousands of homework problems?</a>
+        	</li>
+        	<div id="many_questions" hidden>
+				<p>
+				Dr. Kelley's book <em>Understand Math: Reasons for the Rules</em> includes almost 900 numbered items, most of which are
+				exercises, motivating questions, or main questions. He wanted to
+				not only give answers to practically every question, but to also explain the answers.
+				If this book contained 2,000 problems, there wouldn't be enough room to explain them all.
+				</p> 
+			
+				<p>
+				Traditional textbooks have an overabundance of problems to let the teacher
+				choose which problems to assign. Students aren't intended to solve all problems in a regular textbook.
+				Contrary to that, the book <em>Understand Math</em> is written in a way so that all but the
+				hardest questions
+				(which are labeled) should be solved by everyone. By not having too many problems,
+				it makes it easier to use as a supplement, since basically all the problems
+				in a given chapter can be assigned (with the questions labeled "Challenge" as optional).
+				</p>
+			
+				<p>
+				One final reason this book does not contain 2,000 exercises is that Dr. Kelley 
+				assumes that his readers will also be solving problems using some other curriculum.
+				This book cannot replace standard textbooks.
+				</p>
+        	</div>
+        	
+        	<li><a onclick="toggleVisibility(event)" data-target="#kind_of_reader" class="linklike">
+        	Is this book more suited for struggling students, average ones, or advanced students?</a>
+        	</li>
+        	<div id="kind_of_reader" hidden>
+				<p>
+				Andrew attempted to explain topics as simply as possible, which is helpful for all
+				levels of students. He also includes optional, extra material that can easily be skipped
+				that is more advanced. Struggling students can skip such material, and the more
+				advanced ones can benefit from those parts. Most of the book is focused on understanding
+				the fundamentals, which is helpful for all kinds of students.
+				</p>
+			
+				<p>
+				What readers do need in order to really benefit from this book is a decent work ethic
+				and some amount of self-control. Because full explanations are given for almost every
+				problem, students who lack self-control will be tempted to read the answers before
+				trying the problems themselves. Students who do that will be seriously hindering
+				their own progress.
+				</p>
+        	</div>
+        	
+        	<li><a onclick="toggleVisibility(event)" data-target="#spiral_method" class="linklike">
+        	Does this book use the spiral method?</a>
+        	</li>
+        	<div id="spiral_method" hidden>
+				<p>
+				The essence of the spiral method is to continue to revisit older material. This book
+				does review previous material as needed. Since math builds on itself, 
+				some topics do come up again and again in this book. However, this book does not
+				add unrelated, extra exercises from prior sections.
+				</p>
+        	</div>
+        
+        </ul>
+        
+        
+        
+        </section>
+        
+        
+        
+        <section id="contact" class="anchor">
+            <h2>Contact</h2>
+            <p>If you found an error, Andrew is paying readers who are the first to report any error (mathematical,
+            grammatical, or other). The rate is the following for the <b> first person </b> to give the feedback:
+            </p>
+            
+            <ul>
+				<li> $5 for a mathematical error</li>
+				<li> $3 for any typo or grammatical error (except for commas
+	and also except for apostrophes in expressions such as 2's or \(x\)'s, which 
+	Andrew intentionally writes that way)</li>
+				 <!-- >Not now: $1 (or more) for any suggestion that Andrew finds "sufficiently" helpful -->
+        	</ul>
+        
+        	<p> You may contact Andrew at his personal email. Don't forget the second "e" in his last name:</p>
+        	
+        		<img class="center" src="./images/andrew_email.jpg" alt="first initial followed by kelley then 2500@gmail.com" 
+            	style="max-width: 330px;"/>
+             
+        </section>
+        
+
+	<script>
+
+
+	function scrollToTop() {
+    	window.scrollTo({
+        	top: 0,
+        	behavior: 'smooth' 
+    	});
+	}
+	</script>
+        
+    <script>
+        function toggleVisibility(event) {
+            event.preventDefault();
+            const targetId = event.target.getAttribute('data-target');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.style.display = targetElement.style.display === 'block' ? 'none' : 'block';
+            }
+        }
+        
+        function showSidebar() {
+        	const sidebar = document.querySelector('.sidebar');
+        	sidebar.style.display = 'flex';
+        }
+        
+        function hideSidebar() {
+        	const sidebar = document.querySelector('.sidebar');
+        	sidebar.style.display = 'none';
+        }
+        
+        function adjust_flex_direction() {
+        	
+           if (window.screen.width <= 800) {
+           	  let navbar = document.querySelector('#wide-screen-nav');
+           	  navbar.style.justifyContent = 'flex-end';
+           }
+        }
+        adjust_flex_direction();
+    </script>
+    </main>
+    <footer>
+        <p>&copy; 2025 Andrew Kelley. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
