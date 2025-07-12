@@ -554,6 +554,18 @@
             <p> "An impressive book." - Marilyn Frydrych, math teacher and math lab 
             coordinator at Pikes Peak State College</p>
 
+			<div id="Jim_short_review">
+            <p>"Most math teachers (and students!) are deeply familiar with the common impulse in mathematics 
+            education to “just learn the formula,” apply it, and move on. After all, that’s the goal, right?
+            Well, actually no, not if you really want to learn mathematics.
+            What I so appreciate about Andrew Kelley’s work is his relentless emphasis on understanding real 
+            mathematics – the ‘why’ behind the formula – and his skillful explanation that makes those beautiful 
+            concepts accessible to the student..." 
+            <button type="button" onclick="readMore(event)" data-target="#Jim_short_review" data-long="#Jim_long_review">Read more</button>
+           - Jim DeKorne, retired math teacher and former principal of Colorado Springs Christian Schools</p>
+            </div>
+            
+            <div id="Jim_long_review" hidden>
             <p>"Most math teachers (and students!) are deeply familiar with the common impulse in mathematics 
             education to “just learn the formula,” apply it, and move on. After all, that’s the goal, right?
             Well, actually no, not if you really want to learn mathematics.
@@ -564,6 +576,8 @@
              indecipherable symbols into a delightful exercise in finally understanding the beauty, usefulness, 
             and design of mathematics. You won’t be disappointed." 
            - Jim DeKorne, retired math teacher and former principal of Colorado Springs Christian Schools</p>
+            </div>
+            
             
             
             <p> "I completed chapter 1 and really enjoyed the process of relearning and better 
@@ -572,6 +586,13 @@
             I had the help of a tutor via the text." 
             - Gayle Meredith, senior library associate </p>
             
+            <div id="Erica_Hastert_short_review">
+            <p> "So far, I’m loving it!..."
+            <button type="button" onclick="readMore(event)" data-target="#Erica_Hastert_short_review" data-long="#Erica_Hastert_long_review">Read more</button>
+			- Erica Hastert, PhD, college math teacher </p>
+			</div>
+			
+			<div id="Erica_Hastert_long_review" hidden>
             <p> "So far, I’m loving it!...I really like your descriptions and how you develop ideas/concepts, especially in discussing the 
 				inherent properties of seemingly simple ideas (which, of course, are not usually simple)...I 
 				also very much like how you explain the logic and thought processes behind each concept.  
@@ -582,8 +603,18 @@
 			 combined so many deeply connected ideas and provided 
 			understanding of why these concepts are important, and how they might be used and applied."
 			- Erica Hastert, PhD, college math teacher </p>
+			</div>
 
-
+			
+			<div id="Elizabeth_Trotter_short_review">
+            <p>"Dr. Andrew Kelley's <em>Understand Math: Reasons for the Rules</em> is a delight to read. 
+                But more importantly, this book can help homeschool moms explain why math algorithms are the way they are.
+                <button type="button" onclick="readMore(event)" data-target="#Elizabeth_Trotter_short_review" data-long="#Elizabeth_Trotter_long_review">Read more</button>
+                - Elizabeth Trotter, homeschool mom and blogger.
+            </p>
+			</div>
+			
+			<div id="Elizabeth_Trotter_long_review" hidden>
             <p>"Dr. Andrew Kelley's <em>Understand Math: Reasons for the Rules</em> is a delight to read. 
                 But more importantly, this book can help homeschool moms explain why math algorithms are the way they are.
 
@@ -599,7 +630,20 @@
                 understand math -- and succeed in it!" - Elizabeth Trotter, homeschool mom and blogger. You can read a similar
                 review (and reviews of other curriculum choices) at 
             <a href="https://trotters41.com/2022/11/22/homeschool-math-curriculum-reviews-from-an-engineering-mom/"> Elizabeth Trotter's blog.</a>
+            </p>
+			</div>
 			
+			
+			<div id="Crowder_short_review">
+			<p>
+			"The book will make a great companion to math textbooks throughout subjects like algebra, advanced algebra, 
+			  geometry, trigonometry, and calculus.  The conversational style the book is written in makes it easy to 
+			   understand and follow..."
+			  <button id="Crowder_read_more" type="button" onclick="readMore(event)" data-target="#Crowder_short_review" data-long="#Crowder_long_review">Read more</button>
+			- Jim Crowder, PhD, Mathematician and Engineering Fellow</p>
+			</div>
+			
+			<div id="Crowder_long_review" hidden>
 			<p>
 			"The book will make a great companion to math textbooks throughout subjects like algebra, advanced algebra, 
 			  geometry, trigonometry, and calculus.  The conversational style the book is written in makes it easy to 
@@ -607,7 +651,10 @@
 			  explain new concepts, new math principles, and new ways of thinking that are typically stumbling blocks 
 			  for many being introduced to math throughout the Jr. High-High school 
 			  years."
+			  
 			- Jim Crowder, PhD, Mathematician and Engineering Fellow</p>
+			</div>
+			
         </section>
         
         
@@ -1237,6 +1284,21 @@
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 targetElement.style.display = targetElement.style.display === 'block' ? 'none' : 'block';
+            }
+        }
+        
+        function readMore(event) {
+        	event.preventDefault();
+            const targetId = event.target.getAttribute('data-target');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.style.display = 'none';
+            }
+            
+            const otherId = event.target.getAttribute('data-long');
+            const otherElement = document.querySelector(otherId);
+            if (otherElement) {
+                otherElement.style.display = 'block';
             }
         }
         
